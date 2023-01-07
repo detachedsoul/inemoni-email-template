@@ -9,11 +9,12 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 100%;
     font-weight: 400;
-    padding: 3rem;
+    padding: 1rem;
     background-color: #ffffff;
     color: #121212;
     align-content: space-between;
-    gap: 10rem;
+    gap: 7rem;
+    word-break: break-word;
 }
 
 body,
@@ -27,8 +28,12 @@ a {
 }
 
 .logo {
-    width: 10rem;
+    width: 7rem;
     height: auto;
+}
+
+.w-full {
+    width: 100%;
 }
 
 .light-text {
@@ -53,6 +58,8 @@ a {
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
+    gap: .5rem 1rem;
 }
 
 .justify-between {
@@ -69,30 +76,71 @@ a {
     padding: 2rem;
 }
 
+.transaction-quick-details > * {
+    width: 100%;
+}
+
 .transaction-date > :not(:last-child),
 .transaction-purple-card > :not(:last-child) {
     margin-bottom: 1rem;
 }
 
-.transaction-date > :not(:first-child),
-.transaction-purple-card > :not(.light-text) {
-    font-size: 1.2rem;
-}
-
 .transaction-purple-card {
     border-radius: 10px;
     padding: 1rem;
+    text-align: right;
 }
 
-.transaction-purple-card > *,
+.transaction-purple-card > * {
+    gap: 1rem;
+}
+
+
 .top-container {
     gap: 5rem;
 }
 
-.transaction-details {
+.transaction-quick-details,
+.transaction-details,
+.header {
     gap: 2rem;
 }
 
 .no-underline {
     text-decoration: none;
+}
+
+@media only screen and (min-width: 640px) {
+    body {
+        padding: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        padding: 3rem;
+    }
+
+    .logo {
+        width: 10rem;
+    }
+
+    .transaction-quick-details>* {
+        width: auto;
+    }
+
+    .transaction-date> :not(:first-child),
+    .transaction-purple-card> :not(.light-text) {
+        font-size: 1.2rem;
+    }
+
+    .transaction-purple-card>* {
+        gap: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    body {
+        padding: 5rem;
+    }
 }
