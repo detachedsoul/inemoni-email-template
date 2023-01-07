@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    padding: 3rem 3rem;
+    background-color: #ffffff;
+    color: #121212;
+    align-content: space-between;
+    gap: 10rem;
+}
+
+body,
+.transaction-details,
+.top-container {
+    display: grid;
+}
+
+a {
+    color: inherit;
+}
+
+.light-text {
+    font-size: .9rem;
+}
+
+.bold-text {
+    font-weight: 500;
+}
+
+.secondary-color {
+    color: #18020C;
+}
+
+.bg-purple {
+    background-color: #6912AA;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.transaction-quick-details {
+    background-color: #FCF8FF;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.transaction-date > :not(:last-child),
+.transaction-purple-card > :not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.transaction-date > :not(:first-child),
+.transaction-purple-card > :not(.light-text) {
+    font-size: 1.2rem;
+}
+
+.transaction-purple-card {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.transaction-purple-card > *,
+.top-container {
+    gap: 5rem;
+}
+
+.transaction-details {
+    gap: 2rem;
+}
+
+.no-underline {
+    text-decoration: none;
+}
