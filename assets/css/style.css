@@ -9,7 +9,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 100%;
     font-weight: 400;
-    padding: 3rem 3rem;
+    padding: 3rem;
     background-color: #ffffff;
     color: #121212;
     align-content: space-between;
@@ -24,6 +24,11 @@ body,
 
 a {
     color: inherit;
+}
+
+.logo {
+    width: 10rem;
+    height: auto;
 }
 
 .light-text {
