@@ -1,0 +1,45 @@
+.flex {
+    display: block;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.transaction-date {
+    width: 33.3333%;
+}
+
+.transaction-purple-card {
+    width: 33.3333%;
+    text-align: left;
+}
+
+.transaction-details {
+    gap: 0;
+}
+
+.transaction-purple-card > *,
+.transaction-date>* {
+    margin-bottom: 1rem;
+}
+
+.transaction-details > * {
+    margin-bottom: 2rem;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}

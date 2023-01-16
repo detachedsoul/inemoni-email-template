@@ -17,7 +17,6 @@ body {
     word-break: break-word;
 }
 
-body,
 .transaction-details,
 .top-container {
     display: grid;
@@ -30,6 +29,10 @@ a {
 .logo {
     width: 7rem;
     height: auto;
+}
+
+.inline-block {
+    display: inline-block;
 }
 
 .w-full {
@@ -96,9 +99,9 @@ a {
 }
 
 
-.top-container {
+/* .top-container {
     gap: 5rem;
-}
+} */
 
 .transaction-quick-details,
 .transaction-details,
