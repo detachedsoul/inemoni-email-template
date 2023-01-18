@@ -98,7 +98,6 @@ a {
     gap: 1rem;
 }
 
-
 /* .top-container {
     gap: 5rem;
 } */
@@ -113,37 +112,37 @@ a {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 640px) {
+@media screen and (min-width: 640px) {
     body {
-        padding: 3rem;
+        padding: 3rem !important;
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     body {
-        padding: 3rem;
+        padding: 3rem !important;
     }
 
     .logo {
-        width: 10rem;
+        width: 10rem !important;
     }
 
     .transaction-quick-details>* {
-        width: auto;
+        width: auto !important;
     }
 
     .transaction-date> :not(:first-child),
     .transaction-purple-card> :not(.light-text) {
-        font-size: 1.2rem;
+        font-size: 1.2rem !important;
     }
 
     .transaction-purple-card>* {
-        gap: 5rem;
+        gap: 5rem !important;
     }
 }
 
-@media only screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
     body {
-        padding: 5rem;
+        padding: 5rem !important;
     }
 }

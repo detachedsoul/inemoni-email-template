@@ -1,3 +1,7 @@
+h1 {
+    margin-top: 0;
+}
+
 .flex {
     display: block;
 }
@@ -10,20 +14,7 @@
     margin-bottom: 3rem;
 }
 
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
-}
-
-.transaction-date {
-    width: 33.3333%;
-}
-
 .transaction-purple-card {
-    width: 33.3333%;
     text-align: left;
 }
 
@@ -42,4 +33,80 @@
 
 .mb-0 {
     margin-bottom: 0;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.transaction-date {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 501px) {
+    h1 {
+        margin-bottom: 0 !important;
+    }
+
+    h1,
+    .logo-container {
+        width: auto !important;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        margin-bottom: .5rem !important;
+    }
+
+    h1,
+    .logo-container {
+        float: none !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .transaction-date,
+    .transaction-purple-card,
+    .w-full {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 641px) {
+    .no-float,
+    .w-full {
+        width: auto !important;
+    }
+
+    .transaction-date,
+    .transaction-purple-card {
+        width: 50% !important;
+    }
+
+    .transaction-date {
+        margin-bottom: 0 !important;
+    }
+
+    .md-float-right {
+        float: right !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .transaction-date,
+    .transaction-purple-card {
+        width: 40% !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .transaction-date,
+    .transaction-purple-card {
+        width: 33.3333333% !important;
+    }
 }
