@@ -9,7 +9,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 100%;
     font-weight: 400;
-    padding: 1rem;
+    padding: 16px;
     background-color: #ffffff;
     color: #121212;
     align-content: space-between;
@@ -17,7 +17,6 @@ body {
     word-break: break-word;
 }
 
-body,
 .transaction-details,
 .top-container {
     display: grid;
@@ -28,8 +27,12 @@ a {
 }
 
 .logo {
-    width: 7rem;
+    width: 112px;
     height: auto;
+}
+
+.inline-block {
+    display: inline-block;
 }
 
 .w-full {
@@ -59,7 +62,7 @@ a {
 .flex {
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem 1rem;
+    gap: 8px 16px;
 }
 
 .justify-between {
@@ -73,7 +76,7 @@ a {
 .transaction-quick-details {
     background-color: #FCF8FF;
     border-radius: 12px;
-    padding: 2rem;
+    padding: 32px;
 }
 
 .transaction-quick-details > * {
@@ -82,65 +85,59 @@ a {
 
 .transaction-date > :not(:last-child),
 .transaction-purple-card > :not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 
 .transaction-purple-card {
     border-radius: 10px;
-    padding: 1rem;
+    padding: 16px;
     text-align: right;
 }
 
 .transaction-purple-card > * {
-    gap: 1rem;
+    gap: 16px;
 }
 
-
-.top-container {
-    gap: 5rem;
-}
+/* .top-container {
+    gap: 80px;
+} */
 
 .transaction-quick-details,
 .transaction-details,
 .header {
-    gap: 2rem;
+    gap: 32px;
 }
 
 .no-underline {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 640px) {
+@media screen and (min-width: 640px) {
     body {
-        padding: 3rem;
+        padding: 20px 48px 48px 48px !important;
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     body {
-        padding: 3rem;
+        padding: 48px !important;
     }
 
     .logo {
-        width: 10rem;
+        width: 160px !important;
     }
 
     .transaction-quick-details>* {
-        width: auto;
-    }
-
-    .transaction-date> :not(:first-child),
-    .transaction-purple-card> :not(.light-text) {
-        font-size: 1.2rem;
+        width: auto !important;
     }
 
     .transaction-purple-card>* {
-        gap: 5rem;
+        gap: 80px !important;
     }
 }
 
-@media only screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
     body {
-        padding: 5rem;
+        padding: 80px !important;
     }
 }
