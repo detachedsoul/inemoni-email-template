@@ -23,11 +23,6 @@ h1 {
     gap: 0;
 }
 
-.transaction-purple-card > *,
-.transaction-date>* {
-    margin-bottom: 16px;
-}
-
 .transaction-details > * {
     margin-bottom: 32px;
 }
@@ -62,7 +57,7 @@ h1,
 @media (min-width: 501px) {
     h1 {
         float: left !important;
-        margin-bottom: 0 !important;
+        margin-bottom: 48px !important;
         margin-top: 0 !important;
     }
 
@@ -102,6 +97,10 @@ h1,
 
     .md-float-right {
         float: right !important;
+    }
+
+    .transaction-quick-details.w-full {
+        width: 100% !important;
     }
 }
 
