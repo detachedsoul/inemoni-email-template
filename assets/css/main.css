@@ -23,11 +23,6 @@ h1 {
     gap: 0;
 }
 
-.transaction-purple-card > *,
-.transaction-date>* {
-    margin-bottom: 16px;
-}
-
 .transaction-details > * {
     margin-bottom: 32px;
 }
@@ -42,6 +37,7 @@ h1 {
 
 .float-right {
     float: right;
+    margin-left: auto;
 }
 
 .transaction-date {
@@ -61,8 +57,7 @@ h1,
 
 @media (min-width: 501px) {
     h1 {
-        float: left !important;
-        margin-bottom: 0 !important;
+        margin-bottom: 48px !important;
         margin-top: 0 !important;
     }
 
@@ -72,8 +67,7 @@ h1,
     }
 
     .logo-container {
-        float: right !important;
-        margin-top: 0 !important;
+        margin-top: 16px !important;
         height: 100% !important;
         text-align: center !important;
     }
@@ -82,6 +76,17 @@ h1,
         height: 100% !important;
         object-position: center !important;
         object-fit: contain !important;
+    }
+
+    .transaction-purple-card,
+    .logo-container {
+        float: right !important;
+    }
+
+    h1,
+    .transaction-quick-details,
+    .transaction-date {
+        float: left !important;
     }
 }
 
@@ -102,6 +107,11 @@ h1,
 
     .md-float-right {
         float: right !important;
+    }
+
+    .transaction-quick-details.w-full,
+    .transaction-purple-card div.w-full {
+        width: 100% !important;
     }
 }
 
