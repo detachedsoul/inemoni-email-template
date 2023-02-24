@@ -15,11 +15,6 @@ body {
     word-break: break-word;
 }
 
-/* .transaction-details,
-.top-container {
-    display: grid;
-} */
-
 a {
     color: inherit;
 }
@@ -67,6 +62,10 @@ a {
     margin-bottom: 16px;
 }
 
+.mb-10 {
+    margin-bottom: 10px;
+}
+
 .transaction-purple-card {
     border-radius: 10px;
     padding: 16px;
@@ -84,10 +83,6 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-    body {
-        padding: 48px !important;
-    }
-
     .logo {
         width: 160px !important;
     }
