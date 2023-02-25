@@ -12,6 +12,7 @@ body {
     background-color: #ffffff;
     color: #0A0E27;
     word-break: break-word;
+    padding-top: 10px;
 }
 
 a {
@@ -23,10 +24,20 @@ a {
 }
 
 .logo {
-    width: 112px;
+    width: 150px;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.header {
+    font-size: 32px;
+}
+
+.text-lg {
+    font-size: 110%;
 }
 
 .text-purple {
@@ -55,4 +66,9 @@ a {
 .px-20 {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
