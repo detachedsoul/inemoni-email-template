@@ -42,6 +42,10 @@ a {
     font-size: 110%;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .text-purple {
     color: #6913AA;
 }
@@ -65,6 +69,10 @@ a {
 
 .mb-50 {
     margin-bottom: 50px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
 }
 
 .px-20 {
