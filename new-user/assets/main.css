@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 24px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #0A0E27;
+    word-break: break-word;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.block {
+    display: block;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.header {
+    font-size: 32px;
+    line-height: 30px;
+}
+
+.image-header {
+    object-position: center;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.secondary-header {
+    font-size: 24px;
+}
+
+.text-lg {
+    font-size: 110%;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.text-purple {
+    color: #6913AA;
+}
+
+.bg-purple {
+    background-color: #6913AA;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    display: block;
+}
+
+.bg-light-gray {
+    background: rgba(247, 247, 247, 0.5);
+    padding: 30px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.next-steps-image {
+    margin-bottom: 5px;
+}
+
+@media (min-width: 600px) {
+    .float-right {
+        float: right;
+    }
+
+    .float-left {
+        float: left;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+
+    .next-steps-image {
+        margin-right: 15px;
+        margin-top: -15px;
+        margin-bottom: 0;
+    }
+
+    .next-steps-image,
+    .next-step,
+    .next-steps-container {
+        text-align: left;
+    }
+
+    .next-step {
+        clear: right;
+    }
+
+    .next-steps-container {
+        width: 90%;
+        margin-left: 5%;
+        padding-left: 2.5%;
+    }
+}
+
+@media (min-width: 700px) {
+    .next-steps-container {
+        width: 80%;
+        margin-left: 10%;
+        padding-left: 5%;
+    }
+}
+
+@media (min-width: 800px) {
+    .next-steps-container {
+        width: 75%;
+        margin-left: 12.5%;
+        padding-left: 6.25%;
+    }
+}
+
+@media (min-width: 900px) {
+    .next-steps-container {
+        width: 60%;
+        margin-left: 15%;
+        padding-left: 7.5%;
+    }
+}
