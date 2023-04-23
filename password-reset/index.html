@@ -133,7 +133,7 @@
                                                                 style="padding-bottom:15px;padding-left:25px;padding-right:25px;padding-top:25px;">
                                                                 <div
                                                                     style="color:#101112;direction:ltr;font-family:Arial, Helvetica, sans-serif;font-size:20px;font-weight:700;letter-spacing:0px;line-height:150%;text-align:center;mso-line-height-alt:30px;">
-                                                                    <p style="margin: 0;">Hi Dominic 👋</p>
+                                                                    <p style="margin: 0;">Hi {{user.fname}} 👋</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -147,7 +147,7 @@
                                                                 style="padding-bottom:15px;padding-left:10px;padding-right:10px;">
                                                                 <div
                                                                     style="color:#101112;direction:ltr;font-family:Arial, Helvetica, sans-serif;font-size:19px;font-weight:700;letter-spacing:0px;line-height:150%;text-align:center;mso-line-height-alt:28.5px;">
-                                                                    <p style="margin: 0;">Let’s Reset Your Password</p>
+                                                                    <p style="margin: 0;">Let's Reset Your {{type}}</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -162,7 +162,7 @@
                                                                 <div
                                                                     style="color:#101112;direction:ltr;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:180%;text-align:center;mso-line-height-alt:28.8px;">
                                                                     <p style="margin: 0;">We received your request to
-                                                                        reset your IneMoni password. To continue, please
+                                                                        reset your IneMoni {{type}}. To continue, please
                                                                         click below.</p>
                                                                 </div>
                                                             </td>
@@ -175,15 +175,15 @@
                                                         <tr>
                                                             <td class="pad">
                                                                 <div align="center" class="alignment">
-                                                                    <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://inemoni.org/password-reset" style="height:62px;width:580px;v-text-anchor:middle;" arcsize="7%" strokeweight="7.5pt" strokecolor="#6912aa" fillcolor="#6912aa"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Arial, sans-serif; font-size:16px"><![endif]--><a
-                                                                        href="https://inemoni.org/password-reset"
+                                                                    <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{reset_link}}" style="height:62px;width:580px;v-text-anchor:middle;" arcsize="7%" strokeweight="7.5pt" strokecolor="#6912aa" fillcolor="#6912aa"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Arial, sans-serif; font-size:16px"><![endif]--><a
+                                                                        href="{{reset_link}}"
                                                                         style="text-decoration:none;display:block;color:#ffffff;background-color:#6912aa;border-radius:4px;width:100%;border-top:10px solid transparent;font-weight:400;border-right:0px solid transparent;border-bottom:10px solid transparent;border-left:0px solid transparent;padding-top:5px;padding-bottom:5px;font-family:Arial, Helvetica, sans-serif;font-size:16px;text-align:center;mso-border-alt:none;word-break:keep-all;"
                                                                         target="_blank"><span
                                                                             style="padding-left:20px;padding-right:20px;font-size:16px;display:inline-block;letter-spacing:normal;"><span
                                                                                 dir="ltr"
                                                                                 style="word-break: break-word; line-height: 32px;">Reset
                                                                                 Your
-                                                                                Password</span></span></a><!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
+                                                                                {{type}}</span></span></a><!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -198,8 +198,8 @@
                                                                 <div
                                                                     style="color:#101112;direction:ltr;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:180%;text-align:center;mso-line-height-alt:28.8px;">
                                                                     <p style="margin: 0;">Please note that this link
-                                                                        will expire within 24 hours. After 24 hours, you
-                                                                        must submit a new password reset request and if
+                                                                        will expire within 1 hour. After 1 hour, you
+                                                                        must submit a new {{type}} reset request and if
                                                                         you did not request a new password, please let
                                                                         us know by contacting support at
                                                                         support@inemoni.com.</p>
@@ -256,7 +256,7 @@
                                                                 style="padding-bottom:15px;padding-left:10px;padding-right:10px;padding-top:25px;">
                                                                 <div
                                                                     style="color:#101112;direction:ltr;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:180%;text-align:center;mso-line-height-alt:28.8px;">
-                                                                    <p style="margin: 0;">© 2023 Inemoni™ <span
+                                                                    <p style="margin: 0;">© {{currentYear}} Inemoni™ <span
                                                                             style="color: #000000;"><a
                                                                                 href="https://www.inemoni.org/blog"
                                                                                 rel="noopener"

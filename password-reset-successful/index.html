@@ -133,7 +133,7 @@
                                                                 style="padding-bottom:15px;padding-left:25px;padding-right:25px;padding-top:25px;">
                                                                 <div
                                                                     style="color:#101112;direction:ltr;font-family:Arial, Helvetica, sans-serif;font-size:20px;font-weight:700;letter-spacing:0px;line-height:150%;text-align:center;mso-line-height-alt:30px;">
-                                                                    <p style="margin: 0;">Reset Password Successful</p>
+                                                                    <p style="margin: 0;">{{type}} Reset Successful</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -147,9 +147,9 @@
                                                                 style="padding-bottom:20px;padding-left:10px;padding-right:10px;padding-top:5px;">
                                                                 <div
                                                                     style="color:#101112;direction:ltr;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:180%;text-align:center;mso-line-height-alt:28.8px;">
-                                                                    <p style="margin: 0;">Hello Dominic, This is a
-                                                                        confirmation that the password for your Inemoni
-                                                                        account has just been changed.</p>
+                                                                    <p style="margin: 0;">Hello {{user.fname}}, This is a
+                                                                        confirmation that the {{type}} for your Inemoni
+                                                                        account has just been changed on {{resetDate}}</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -164,7 +164,7 @@
                                                                 <div
                                                                     style="color:#101112;direction:ltr;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:180%;text-align:center;mso-line-height-alt:28.8px;">
                                                                     <p style="margin: 0;">If you didn't change your
-                                                                        password, you can reach out to support
+                                                                        {{type}}, you can reach out to support
                                                                         immediately to secure your account. </p>
                                                                 </div>
                                                             </td>
