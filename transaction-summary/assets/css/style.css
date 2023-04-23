@@ -78,7 +78,7 @@ a {
 
 @media screen and (min-width: 640px) {
     body {
-        padding: 20px 48px 48px 48px !important;
+        padding: 0 48px 48px 48px !important;
     }
 }
 
@@ -93,11 +93,5 @@ a {
 
     .transaction-purple-card>* {
         gap: 80px !important;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    body {
-        padding: 80px !important;
     }
 }

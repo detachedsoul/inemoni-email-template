@@ -4,49 +4,56 @@ h1 {
 }
 
 .flex {
-    display: block;
+    display: block !important;
 }
 
 .mb-2 {
-    margin-bottom: 32px;
+    margin-bottom: 32px!important;
 }
 
 .mb-3 {
-    margin-bottom: 48px;
+    margin-bottom: 48px!important;
 }
 
 .transaction-purple-card {
-    text-align: left;
+    text-align: left!important;
 }
 
 .transaction-details {
-    gap: 0;
+    gap: 0!important;
 }
 
 .transaction-details > * {
-    margin-bottom: 32px;
+    margin-bottom: 32px!important;
 }
 
 .mb-0 {
-    margin-bottom: 0;
+    margin-bottom: 0!important;
 }
 
 .float-left {
-    float: left;
+    float: left!important;
 }
 
 .float-right {
-    float: right;
-    margin-left: auto;
+    float: right!important;
+    margin-left: auto!important;
 }
 
 .transaction-date {
-    margin-bottom: 16px;
+    margin-bottom: 16px!important;
 }
 
 h1,
 .logo-container {
     float: none !important;
+}
+
+.logo-container,
+.header {
+    text-align: center !important;
+    margin-left: auto!important;
+    margin-right: auto!important;
 }
 
 .transaction-date,
@@ -69,7 +76,6 @@ h1,
     .logo-container {
         margin-top: 16px !important;
         height: 100% !important;
-        text-align: center !important;
     }
 
     .logo {
