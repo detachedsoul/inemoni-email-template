@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Summary</title>
+    <meta name="description" content="Inemoni Email Template">
+    <link rel="icon" href="https://inemoni.org/uploads/inemoni.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="preload" as="style">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 100%;
+            font-weight: 400;
+            padding: 16px;
+            background-color: #ffffff;
+            color: #121212;
+            word-break: break-word;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .logo {
+            width: 112px;
+            height: auto;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .light-text {
+            font-size: .9rem;
+        }
+
+        .bold-text {
+            font-weight: 500;
+        }
+
+        .secondary-color {
+            color: #18020C;
+        }
+
+        .bg-purple {
+            background-color: #6912AA;
+        }
+
+        .text-white {
+            color: #ffffff;
+        }
+
+        .transaction-quick-details {
+            background-color: #FCF8FF;
+            border-radius: 12px;
+            padding: 32px;
+        }
+
+        .mb-16 {
+            margin-bottom: 16px;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+
+        .transaction-purple-card {
+            border-radius: 10px;
+            padding: 16px;
+            text-align: right;
+        }
+
+        .no-underline {
+            text-decoration: none;
+        }
+
+        @media screen and (min-width: 640px) {
+            body {
+                padding: 0 48px 48px 48px !important;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .logo {
+                width: 160px !important;
+            }
+
+            .transaction-quick-details>* {
+                width: auto !important;
+            }
+
+            .transaction-purple-card>* {
+                gap: 80px !important;
+            }
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 8px !important;
+        }
+
+        .flex {
+            display: block !important;
+        }
+
+        .mb-2 {
+            margin-bottom: 32px!important;
+        }
+
+        .mb-3 {
+            margin-bottom: 48px!important;
+        }
+
+        .transaction-purple-card {
+            text-align: left!important;
+        }
+
+        .transaction-details {
+            gap: 0!important;
+        }
+
+        .transaction-details > * {
+            margin-bottom: 32px!important;
+        }
+
+        .mb-0 {
+            margin-bottom: 0!important;
+        }
+
+        .float-left {
+            float: left!important;
+        }
+
+        .float-right {
+            float: right!important;
+            margin-left: auto!important;
+        }
+
+        .transaction-date {
+            margin-bottom: 16px!important;
+        }
+
+        h1,
+        .logo-container {
+            float: none !important;
+        }
+
+        .logo-container,
+        .header {
+            text-align: center !important;
+            margin-left: auto!important;
+            margin-right: auto!important;
+        }
+
+        .transaction-date,
+        .transaction-purple-card,
+        .w-full {
+            width: 100% !important;
+        }
+
+        @media (min-width: 501px) {
+            h1 {
+                margin-bottom: 48px !important;
+                margin-top: 0 !important;
+            }
+
+            h1,
+            .logo-container {
+                width: auto !important;
+            }
+
+            .logo-container {
+                margin-top: 16px !important;
+                height: 100% !important;
+            }
+
+            .logo {
+                height: 100% !important;
+                object-position: center !important;
+                object-fit: contain !important;
+            }
+
+            .transaction-purple-card,
+            .logo-container {
+                float: right !important;
+            }
+
+            h1,
+            .transaction-quick-details,
+            .transaction-date {
+                float: left !important;
+            }
+        }
+
+        @media (min-width: 641px) {
+            .no-float,
+            .w-full {
+                width: auto !important;
+            }
+
+            .transaction-date,
+            .transaction-purple-card {
+                width: 50% !important;
+            }
+
+            .transaction-date {
+                margin-bottom: 0 !important;
+            }
+
+            .md-float-right {
+                float: right !important;
+            }
+
+            .transaction-quick-details.w-full,
+            .transaction-purple-card div.w-full {
+                width: 100% !important;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .transaction-date,
+            .transaction-purple-card {
+                width: 40% !important;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .transaction-date,
+            .transaction-purple-card {
+                width: 33.3333333% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-container">
+        <div class="flex header mb-3">
+            <h1 class="float-left header">
+                Transaction Alert
+            </h1>
+
+            <div class="float-right logo-container">
+                <img class="logo" src="https://inemoni.org/uploads/inemoni.png" alt="Inemoni Digital Concept"
+                    height="auto" width="100%">
+            </div>
+        </div>
+
+        <div class="transaction-quick-details mb-3 w-full">
+            <div class="transaction-date w-full">
+                <h2 class="mb-16">
+                    Transaction Summary
+                </h2>
+
+                <p class="secondary-color mb-16">
+                    Date: {{purchase_date}}
+                </p>
+
+                <p class="secondary-color mb-0 mb-16">
+                    Time: {{purchase_time}}
+                </p>
+            </div>
+
+            <div class="bg-purple text-white transaction-purple-card w-full">
+                <div class="mb-16 w-full">
+                    <span class="light-text">
+                        Amount
+                    </span>
+
+                    <span class="bold-text float-right">
+                        {{purchase_price}}
+                    </span>
+                </div>
+
+                <div class="mb-16 w-full">
+                    <span class="light-text">
+                        Charges
+                    </span>
+
+                    <span class="bold-text float-right">
+                        {{trans.details.charge}}
+                    </span>
+                </div>
+
+                <div class="mb-16 mb-0 w-full">
+                    <span class="bold-text">
+                        Total:
+                    </span>
+
+                    <span class="bold-text float-right">
+                        {{trans.amount_formatted}}
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear: both !important"></div>
+
+        <div class="transaction-details mb-3">
+            <div class="flex">
+                <span class="bold-text">
+                    Transaction ID:
+                </span>
+
+                <span class="float-right">
+                    #{{trans.trans_id}}
+                </span>
+            </div>
+
+            <div style="clear: both !important"></div>
+
+            <div class="flex">
+                <span class="bold-text">
+                    Type:
+                </span>
+            
+                <span class="float-right">
+                    {{trans.typeText}}
+                </span>
+            </div>
+
+            {{summary}}
+        </div>
+
+        <p class="mb-3">
+            You can request for a full e-statement from the Inemoni app and it will be sent to your inbox. If you need
+            to know more,
+            send an email to <a class="no-underline" href="mailto:support@inemoni.com">support@inemoni.com</a> or call
+            <a href="tel:01-8880249">01-8880249</a>
+        </p>
+    </div>
+
+    <div class="flex">
+        <span class="bold-text float-left w-full">
+            Thanks for being a customer
+        </span>
+
+        <span class="bold-text float-right w-full md-float-right">
+            Need Help? <a class="light-text no-underline" href="mailto:support@inemoni.com">support@inemoni.com</a>
+        </span>
+    </div>
+</body>
+
+</html>
