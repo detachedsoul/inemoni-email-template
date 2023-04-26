@@ -172,6 +172,10 @@
             margin-right: auto!important;
         }
 
+        .logo-container {
+            margin-bottom: 20px !important;
+        }
+
         .transaction-date,
         .transaction-purple-card,
         .w-full {
@@ -182,11 +186,6 @@
             h1 {
                 margin-bottom: 48px !important;
                 margin-top: 0 !important;
-            }
-
-            h1,
-            .logo-container {
-                width: auto !important;
             }
 
             .logo-container {
@@ -200,8 +199,7 @@
                 object-fit: contain !important;
             }
 
-            .transaction-purple-card,
-            .logo-container {
+            .transaction-purple-card {
                 float: right !important;
             }
 
@@ -255,15 +253,8 @@
 
 <body>
     <div class="top-container">
-        <div class="flex header mb-3">
-            <h1 class="float-left header">
-                Transaction Alert
-            </h1>
-
-            <div class="float-right logo-container">
-                <img class="logo" src="https://inemoni.org/uploads/inemoni.png" alt="Inemoni Digital Concept"
-                    height="auto" width="100%">
-            </div>
+        <div class="logo-container">
+            <img class="logo" src="https://inemoni.org/uploads/inemoni.png" alt="Inemoni Digital Concept" height="auto" width="100%">
         </div>
 
         <div class="transaction-quick-details mb-3 w-full">
@@ -333,7 +324,7 @@
                 <span class="bold-text">
                     Type:
                 </span>
-            
+
                 <span class="float-right">
                     {{trans.typeText}}
                 </span>
