@@ -159,7 +159,7 @@
                                                                 style="padding-bottom:15px;padding-left:10px;padding-right:25px;padding-top:30px;">
                                                                 <div
                                                                     style="color:#6912aa;direction:ltr;font-family:Arial, Helvetica, sans-serif;font-size:20px;font-weight:700;letter-spacing:0px;line-height:150%;text-align:left;mso-line-height-alt:30px;">
-                                                                    <p style="margin: 0;">Hello Wisdom,</p>
+                                                                    <p style="margin: 0;">Hello {{user.fname}},</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -195,17 +195,17 @@
                                                                         <strong>Assigned Customer Details</strong></p>
                                                                     <p data-block-id="block-79ced3f0-633c-4946-906b-bd235d73e752"
                                                                         style="margin: 0; margin-bottom: 10px;">Name:
-                                                                        Wisdom Ojimah</p>
+                                                                        {{customer_name}}</p>
                                                                     <p data-block-id="block-a07e2de1-c4f2-4946-bf2d-2f8bb75644d8"
                                                                         style="margin: 0; margin-bottom: 10px;">Phone
-                                                                        Number: 07085094454</p>
+                                                                        Number: {{customer_phone}}</p>
                                                                     <p data-block-id="block-6041d7cd-d5de-4b88-94ed-f4d23e3346f3"
                                                                         style="margin: 0;">Email: <a
-                                                                            href="mailto:support@inemoni.com"
+                                                                            href="mailto:{{customer_email}}"
                                                                             rel="noopener noreferrer"
                                                                             style="text-decoration: underline; color: #8a3c90;"
                                                                             target="_blank"
-                                                                            title="support@inemoni.com">support@inemoni.com</a>
+                                                                            title="{{customer_email}}">{{customer_email}}</a>
                                                                     </p>
                                                                 </div>
                                                             </td>
